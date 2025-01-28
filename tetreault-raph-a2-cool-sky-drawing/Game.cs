@@ -77,5 +77,14 @@ public class Game
             int x = 50 + i * 100;
             Draw.Circle(x, Window.Height, 75);
         }
+
+        // Draw little guy
+        float mx = Input.GetMouseX();
+        float my = Input.GetMouseY();
+        Draw.FillColor = softOrange;
+        Draw.Circle(mx, my, 20);
+        Draw.FillColor = deepBlue;
+        Draw.Circle(mx - 8, my, 3);
+        Draw.Circle(mx + 8, my, 3);
     }
 }
